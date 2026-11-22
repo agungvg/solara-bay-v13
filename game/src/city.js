@@ -404,13 +404,13 @@ export function buildCity(scene, presetName = 'noon') {
   // --- Ferris wheel on the pier head, HUGE on the skyline. It faces the
   // road (no Y rotation) so the full circle reads from the boulevard.
   const ferris = makeFerrisWheel();
-  ferris.position.set(24, 19, -26);
+  ferris.position.set(24, 19, -60);
   group.add(ferris);
 
   // --- superyacht anchored off the beach
   const yacht = makeYacht();
-  yacht.position.set(78, 0.1, -52);
-  yacht.rotation.y = -0.5;
+  yacht.position.set(12, 0.1, -135);
+  yacht.rotation.y = 0;
   group.add(yacht);
   const yacht2 = makeYacht();
   yacht2.scale.setScalar(0.6);
